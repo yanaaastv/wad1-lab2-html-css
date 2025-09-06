@@ -1,0 +1,155 @@
+/*  UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  ELEMENT SELECTOR */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #a484c2, rgba(218, 145, 233, 0.397),  rgba(218, 145, 233, 0.397), #a484c2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #3f005c;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3f005c;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #453368;
+}
+/*  CLASS SELECTOR */
+.desc {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* DESCENDANTS SELECTOR */
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3f005c;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: aliceblue;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #cccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #854d8a;
+    color: #ffffffea;
+}
+
+tr:nth-child(even) {
+    background: #af73b4;
+}
+
+#registration-form {
+    background: white;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 8px rgba(0, 0, 0, 0.1) ;
+}
+
+#registration-form h2 {
+    color: #48254b;
+    margin: 14px;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-top: 4px;
+    width: 100%;
+    border: 1px solid #48254b;
+    border-radius: 4px;
+}
+/*  ATTRIBUTE SELECTOR */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[required] {
+    border-left: 4px solid #8842a7;
+}
+
+/* PSEUDO-CLASS */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #453368;
+    box-shadow: 0 0 4px rgba(233, 153, 255, 0.747);
+}
+
+button {
+    padding: 10px 14px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #453368;
+}
+
+button[type="submit"] {
+    background: #3cd68e;
+}
+
+button[type="reset"] {
+    background: #eb4732;
+}
+
+button[type="submit"]:hover {
+    background: #1da364;
+}
+
+button[type="reset"]:hover {
+    background: #aa1b08;
+}
+
+/* RESPONSIVENE */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 3fr;
+    }
+}
+
